@@ -1,0 +1,72 @@
+/* ===== FAQ CSS ===== */
+
+.ud-faq {
+  padding-top: 120px;
+  padding-bottom: 90px;
+  background: #f3f4fe;
+  position: relative;
+  z-index: 1;
+
+  @media #{$xs } {
+    padding-top: 80px;
+    padding-bottom: 50px;
+  }
+
+  .shape {
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    bottom: 0;
+  }
+}
+
+.ud-single-faq {
+  background: var(--white);
+  border: 1px solid #f3f4fe;
+  box-shadow: 0px 20px 95px rgba(201, 203, 204, 0.3);
+  border-radius: 10px;
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .image {
+    flex-grow: 0;
+    flex-shrink: 0;
+
+    img {
+      width: 500px;
+    }
+  }
+
+  .ud-faq-body {
+    padding: 0px 30px 40px 95px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    .title {
+      font-size: 30px;
+      color: var(--primary-color);
+    }
+
+    .info {
+      margin: 10px 0;
+
+      @media #{$lg, $xs} {
+        padding: 0px 16px 20px 82px;
+      }
+    }
+
+    .link {
+      .ud-feature-link {
+        font-weight: 600;
+        color: var(--body-color);
+
+        &:hover {
+          color: var(--primary-color);
+        }
+      }
+    }
+  }
+}
